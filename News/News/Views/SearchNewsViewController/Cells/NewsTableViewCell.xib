@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsTableViewCell" rowHeight="276" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="276"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5B-pt-w58">
+                        <rect key="frame" x="410" y="10" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="lyU-Ct-UNT"/>
+                            <constraint firstAttribute="height" constant="30" id="nR8-QM-ILj"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="star.circle" catalog="system"/>
+                        <connections>
+                            <action selector="favouriteButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ypK-iq-grm"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OG Bitcoin Core Developer Claims Hack Drained Nearly All His BTC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyS-Ri-R3c">
+                        <rect key="frame" x="10" y="9.9999999999999964" width="390" height="45.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Ak-OJ-qeP">
+                        <rect key="frame" x="10" y="65.666666666666686" width="430" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="W2Q-yS-PsI"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cF4-Vt-wst">
+                        <rect key="frame" x="10" y="225.66666666666666" width="430" height="18"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kris Holt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b72-Zc-q4y">
+                                <rect key="frame" x="0.0" y="0.0" width="210" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reuters" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gL-LK-33C">
+                                <rect key="frame" x="220" y="0.0" width="210" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="4Bg-gb-VKQ">
+                        <rect key="frame" x="206.66666666666666" y="122.33333333333331" width="37" height="37"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WyS-Ri-R3c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0s5-d1-fo1"/>
+                    <constraint firstItem="cF4-Vt-wst" firstAttribute="top" secondItem="6Ak-OJ-qeP" secondAttribute="bottom" constant="10" id="4R7-Yf-Men"/>
+                    <constraint firstAttribute="trailing" secondItem="6Ak-OJ-qeP" secondAttribute="trailing" constant="10" id="61O-2l-MGi"/>
+                    <constraint firstAttribute="trailing" secondItem="k5B-pt-w58" secondAttribute="trailing" constant="10" id="6mS-va-gr7"/>
+                    <constraint firstItem="4Bg-gb-VKQ" firstAttribute="centerY" secondItem="6Ak-OJ-qeP" secondAttribute="centerY" id="GoZ-14-d5Q"/>
+                    <constraint firstItem="6Ak-OJ-qeP" firstAttribute="top" secondItem="WyS-Ri-R3c" secondAttribute="bottom" constant="10" id="LMR-ru-zBX"/>
+                    <constraint firstItem="6Ak-OJ-qeP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="T0c-EF-Vcu"/>
+                    <constraint firstItem="4Bg-gb-VKQ" firstAttribute="centerX" secondItem="6Ak-OJ-qeP" secondAttribute="centerX" id="UV0-B3-032"/>
+                    <constraint firstItem="k5B-pt-w58" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Wvx-g3-yJ8"/>
+                    <constraint firstItem="k5B-pt-w58" firstAttribute="leading" secondItem="WyS-Ri-R3c" secondAttribute="trailing" constant="10" id="Xd7-yb-aJc"/>
+                    <constraint firstAttribute="trailing" secondItem="cF4-Vt-wst" secondAttribute="trailing" constant="10" id="gX9-I2-35r"/>
+                    <constraint firstItem="cF4-Vt-wst" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="pcw-tp-glS"/>
+                    <constraint firstItem="WyS-Ri-R3c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qty-ju-Aw7"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cF4-Vt-wst" secondAttribute="bottom" constant="10" id="x5t-ID-hen"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activityIndicator" destination="4Bg-gb-VKQ" id="KTM-1w-wHp"/>
+                <outlet property="authorLabel" destination="b72-Zc-q4y" id="5aA-iz-s61"/>
+                <outlet property="favoutiteButtonOutlet" destination="k5B-pt-w58" id="2GT-vg-Vst"/>
+                <outlet property="imageViewNews" destination="6Ak-OJ-qeP" id="eIF-l9-4RC"/>
+                <outlet property="sourceLabel" destination="6gL-LK-33C" id="sYD-5x-jje"/>
+                <outlet property="titleLabel" destination="WyS-Ri-R3c" id="CoJ-Ec-end"/>
+            </connections>
+            <point key="canvasLocation" x="-323.66412213740455" y="-62.676056338028175"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star.circle" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
